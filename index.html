@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Iglesia Manantiales · Aguas que dan vida</title>
+<meta name="description" content="Iglesia Cristiana Manantiales — San Bernardo, Chile. Aguas que dan vida. Culto de familia los domingos 11h, Av. Portales 3022. 13 congregaciones en Chile y Argentina." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="pill pill-brand" href="#top" aria-label="Manantiales — inicio">
+      <svg class="logo-mark" width="30" height="30" viewBox="0 0 48 48" aria-hidden="true">
+        <circle class="ring" cx="24" cy="24" r="21" stroke-width="2.3"></circle>
+        <path class="wave" d="M16.5 14 C 22.5 21, 10.5 27, 16.5 34" stroke-width="3.1"></path>
+        <path class="wave" d="M24 14 C 30 21, 18 27, 24 34" stroke-width="3.1"></path>
+        <path class="wave" d="M31.5 14 C 37.5 21, 25.5 27, 31.5 34" stroke-width="3.1"></path>
+      </svg>
+      <span class="wordmark">Manantiales</span>
+    </a>
+
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" class="active">ES</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a href="#semana" class="btn btn-primary nav-cta">
+        <span data-i18n="cta.sunday">ven este domingo</span>
+        <span class="arr" aria-hidden="true">↗</span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="nav-toggle-bars"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menú móvil desplegable -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <nav class="mobile-links" aria-label="Menú móvil">
+      <a href="#eventos" data-i18n="nav.events">eventos</a>
+      <a href="#nosotros" data-i18n="nav.about">nosotros</a>
+      <a href="#proposito" data-i18n="nav.purpose">propósito</a>
+      <a href="#semana" data-i18n="nav.week">la semana</a>
+      <a href="#iglesias" data-i18n="nav.world">iglesias</a>
+      <a href="#redes" data-i18n="nav.social">redes</a>
+    </nav>
+    <div class="mobile-foot">
+      <div class="lang lang-mobile" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" class="active">ES</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a href="#semana" class="btn btn-primary mobile-cta">
+        <span data-i18n="cta.sunday">ven este domingo</span>
+        <span class="arr" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ RIEL LATERAL DE SECCIONES (escritorio) ============ -->
+<nav class="side-rail" id="sideRail" aria-label="Navegación de secciones">
+  <span class="side-rail-line" aria-hidden="true"><span class="side-rail-thumb"></span></span>
+  <a href="#top" class="sr-item" data-section="top">
+    <span class="sr-num">00</span>
+    <span class="sr-label" data-i18n="rail.home">inicio</span>
+  </a>
+  <a href="#eventos" class="sr-item" data-section="eventos">
+    <span class="sr-num">01</span>
+    <span class="sr-label" data-i18n="nav.events">eventos</span>
+  </a>
+  <a href="#nosotros" class="sr-item" data-section="nosotros">
+    <span class="sr-num">02</span>
+    <span class="sr-label" data-i18n="nav.about">nosotros</span>
+  </a>
+  <a href="#proposito" class="sr-item" data-section="proposito">
+    <span class="sr-num">03</span>
+    <span class="sr-label" data-i18n="nav.purpose">propósito</span>
+  </a>
+  <a href="#semana" class="sr-item" data-section="semana">
+    <span class="sr-num">04</span>
+    <span class="sr-label" data-i18n="nav.week">la semana</span>
+  </a>
+  <a href="#iglesias" class="sr-item" data-section="iglesias">
+    <span class="sr-num">05</span>
+    <span class="sr-label" data-i18n="nav.world">iglesias</span>
+  </a>
+  <a href="#redes" class="sr-item" data-section="redes">
+    <span class="sr-num">06</span>
+    <span class="sr-label" data-i18n="nav.social">redes</span>
+  </a>
+</nav>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/web/hero.jpg" alt="Adoración en Iglesia Manantiales" />
+    </div>
+
+    <div class="wrap hero-inner">
+      <span class="eyebrow hero-eyebrow reveal" data-i18n="hero.eyebrow">Manantiales · Santiago · Chile</span>
+      <h1 class="display-xl reveal d1" data-i18n-html="hero.title">Aguas que <span class="l2">dan vida</span></h1>
+
+      <div class="hero-verse reveal d2">
+        <p class="verse" data-i18n="hero.verse">"El que cree en mí, como dice la Escritura, de su interior correrán ríos de agua viva."</p>
+        <span class="verse-ref" data-i18n="hero.verseRef">Juan 7:38</span>
+      </div>
+
+      <div class="hero-actions reveal d3">
+        <a href="#semana" class="btn btn-light">
+          <span data-i18n="cta.sunday">ven este domingo</span>
+          <span class="arr" aria-hidden="true">↗</span>
+        </a>
+        <a href="#nosotros" class="alink">
+          <span class="ar ar-l" aria-hidden="true">→</span>
+          <span data-i18n="hero.know">conoce la iglesia</span>
+          <span class="ar ar-r" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="hero-stats reveal d4">
+        <div class="hstat"><div class="n"><b>20</b>+</div><div class="l" data-i18n="stat.years">años de trayectoria</div></div>
+        <div class="hstat"><div class="n"><b>13</b></div><div class="l" data-i18n="stat.churches">congregaciones</div></div>
+        <div class="hstat"><div class="n"><b>2</b></div><div class="l" data-i18n="stat.countries">países</div></div>
+        <div class="hstat"><div class="n">2004</div><div class="l" data-i18n="stat.sinceL">desde San Bernardo</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTOS ============ -->
+  <section class="section-pad" id="eventos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow reveal" data-i18n="ev.kicker">Próximos eventos · 2026</span>
+        <h2 class="display-l reveal d1" data-i18n-html="ev.title">Lo que <em>se viene.</em></h2>
+        <p class="lead reveal d2" data-i18n="ev.lead">Encuentros que marcan el año. Aparta la fecha y conéctate — la entrada se anuncia en nuestras redes.</p>
+      </div>
+
+      <div class="ev-grid">
+        <article class="ev-card reveal">
+          <div class="ev-media">
+            <img class="media-fill" src="assets/web/ev-bethel.jpg" alt="Bethel" />
+            <div class="ev-date">19–21 JUN</div>
+            <div class="ev-next" data-i18n="ev.next">Próximo</div>
+          </div>
+          <div class="ev-body">
+            <div class="kicker" data-i18n="ev.bethelK">Encuentro</div>
+            <h3 data-i18n="ev.bethelT">Bethel</h3>
+            <p data-i18n="ev.bethelP">Tres días para encontrarnos con la presencia de Dios y renovar el corazón de la iglesia.</p>
+            <div class="ev-meta">
+              <span class="tag">19–21 JUNIO · 2026</span>
+              <a class="alink" href="#redes"><span data-i18n="ev.more">más info</span><span class="ar ar-r" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="ev-card reveal d1">
+          <div class="ev-media">
+            <img class="media-fill" src="assets/web/ev-jovenes.jpg" alt="Conferencia de Jóvenes" />
+            <div class="ev-date">17–19 JUL</div>
+          </div>
+          <div class="ev-body">
+            <div class="kicker" data-i18n="ev.jovenesK">Jóvenes</div>
+            <h3 data-i18n="ev.jovenesT">Conferencia de Jóvenes</h3>
+            <p data-i18n="ev.jovenesP">Una nueva generación que quiere encontrarse con Dios. Alabanza, palabra y comunidad.</p>
+            <div class="ev-meta">
+              <span class="tag">17–19 JULIO · 2026</span>
+              <a class="alink" href="#redes"><span data-i18n="ev.more">más info</span><span class="ar ar-r" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="ev-card reveal">
+          <div class="ev-media">
+            <img class="media-fill" src="assets/web/ev-codigo7.jpg" alt="Código 7" />
+            <div class="ev-date">7–8 AGO</div>
+          </div>
+          <div class="ev-body">
+            <div class="kicker" data-i18n="ev.codigoK">Encuentro</div>
+            <h3 data-i18n="ev.codigoT">Código 7</h3>
+            <p data-i18n="ev.codigoP">Dos días de formación e impulso para quienes quieren crecer y servir con propósito.</p>
+            <div class="ev-meta">
+              <span class="tag">7–8 AGOSTO · 2026</span>
+              <a class="alink" href="#redes"><span data-i18n="ev.more">más info</span><span class="ar ar-r" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="ev-card reveal d1">
+          <div class="ev-media">
+            <img class="media-fill" src="assets/web/ev-principal.jpg" alt="Conferencia Manantiales" />
+            <div class="ev-date">22–25 OCT</div>
+          </div>
+          <div class="ev-body">
+            <div class="kicker" data-i18n="ev.principalK">Conferencia principal</div>
+            <h3 data-i18n="ev.principalT">Conferencia Manantiales</h3>
+            <p data-i18n="ev.principalP">El encuentro central del año. Cuatro días de la familia Manantiales reunida, con invitados de Chile y el mundo.</p>
+            <div class="ev-meta">
+              <span class="tag">22–25 OCTUBRE · 2026</span>
+              <a class="alink" href="#redes"><span data-i18n="ev.more">más info</span><span class="ar ar-r" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Aguas que dan vida</span>
+      <svg class="marquee-dot" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="currentColor"></circle></svg>
+      <span class="marquee-item alt">Ríos de agua viva</span>
+      <svg class="marquee-dot" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="currentColor"></circle></svg>
+      <span class="marquee-item">Una iglesia llena de vida</span>
+      <svg class="marquee-dot" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="currentColor"></circle></svg>
+      <span class="marquee-item alt">Manantiales</span>
+      <svg class="marquee-dot" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="currentColor"></circle></svg>
+      <span class="marquee-item">Aguas que dan vida</span>
+      <svg class="marquee-dot" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="currentColor"></circle></svg>
+      <span class="marquee-item alt">Ríos de agua viva</span>
+      <svg class="marquee-dot" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="currentColor"></circle></svg>
+      <span class="marquee-item">Una iglesia llena de vida</span>
+      <svg class="marquee-dot" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="currentColor"></circle></svg>
+      <span class="marquee-item alt">Manantiales</span>
+      <svg class="marquee-dot" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="currentColor"></circle></svg>
+    </div>
+  </div>
+
+  <!-- ============ QUIÉNES SOMOS ============ -->
+  <section id="nosotros">
+    <div class="about-feature">
+      <div class="about-feature-bg">
+        <img src="assets/web/about2.jpg" alt="Comunidad de Iglesia Manantiales" />
+      </div>
+      <div class="wrap about-feature-inner">
+        <div class="about-copy">
+          <span class="eyebrow reveal" data-i18n="about.kicker">Quiénes somos</span>
+          <h2 class="display-l reveal d1" data-i18n-html="about.title" style="margin-top:22px;">Comprometidos con la <em>familia.</em></h2>
+          <p class="lead reveal d2" data-i18n="about.body">Manantiales nació en 2004 en San Bernardo, Santiago de Chile. Somos una familia que cree en el poder de la transformación: acompañamos a las personas en su crecimiento, fortalecemos familias y servimos con generosidad. Nuestro corazón es compartir el evangelio de Jesús y llevar esperanza a cada vida.</p>
+
+          <div class="about-verse reveal d2">
+            <p class="verse" data-i18n="about.verse">"Por tanto, id y haced discípulos a todas las naciones…"</p>
+            <span class="verse-ref" data-i18n="about.verseRef">Mateo 28:19 · NVI</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-badge reveal d1">
+        <span class="big">2004</span>
+        <span class="sm" data-i18n="about.badge">nuestro comienzo</span>
+      </div>
+    </div>
+
+    <div class="wrap about-below">
+      <!-- Manantiales es -->
+      <div class="identity">
+        <span class="eyebrow lab reveal" data-i18n="identity.kicker">Manantiales es</span>
+        <div class="identity-list">
+          <div class="identity-row reveal"><span class="ix">01</span><span class="word" data-i18n="identity.1">una iglesia</span></div>
+          <div class="identity-row reveal d1"><span class="ix">02</span><span class="word" data-i18n="identity.2">una unción apostólica</span></div>
+          <div class="identity-row reveal d2"><span class="ix">03</span><span class="word" data-i18n="identity.3">un espíritu profético</span></div>
+          <div class="identity-row reveal d3"><span class="ix">04</span><span class="word" data-i18n="identity.4">un corazón pastoral</span></div>
+        </div>
+      </div>
+
+      <!-- ADN -->
+      <div class="adn">
+        <div class="section-head" style="margin-bottom:34px;">
+          <span class="eyebrow reveal" data-i18n="adn.kicker">Nuestro ADN</span>
+          <h2 class="display-m reveal d1" data-i18n="adn.title">Tres pilares que definen cómo vivimos la fe.</h2>
+        </div>
+        <div class="adn-grid">
+          <div class="adn-card reveal">
+            <div class="num">01</div>
+            <h3 data-i18n="adn.1t">Adoración</h3>
+            <div class="desc" data-i18n="adn.1d">Vivimos para honrar a Dios en todo — en el culto del domingo y en cada día de la semana.</div>
+            <div class="verse-box">
+              <p class="verse" data-i18n="adn.1v">"…para alabanza de la gloria de su gracia, con la cual nos hizo aceptos en el Amado."</p>
+              <span class="verse-ref" data-i18n="adn.1r">Efesios 1:6</span>
+            </div>
+          </div>
+          <div class="adn-card reveal d1">
+            <div class="num">02</div>
+            <h3 data-i18n="adn.2t">Familia</h3>
+            <div class="desc" data-i18n="adn.2d">Somos comunidad. En los GruposFe, de casa en casa, se vive el discipulado real.</div>
+            <div class="verse-box">
+              <p class="verse" data-i18n="adn.2v">"…hagamos bien a todos, y mayormente a los de la familia de la fe."</p>
+              <span class="verse-ref" data-i18n="adn.2r">Gálatas 6:10</span>
+            </div>
+          </div>
+          <div class="adn-card reveal d2">
+            <div class="num">03</div>
+            <h3 data-i18n="adn.3t">Servicio</h3>
+            <div class="desc" data-i18n="adn.3d">Estamos llamados a ir. El Hijo del Hombre no vino para ser servido, sino para servir.</div>
+            <div class="verse-box">
+              <p class="verse" data-i18n="adn.3v">"…el que quiera hacerse grande entre vosotros será vuestro servidor."</p>
+              <span class="verse-ref" data-i18n="adn.3r">Mateo 20:26-28</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROPÓSITO / POZOS ============ -->
+  <section id="proposito">
+    <div class="about-feature feature-right">
+      <div class="about-feature-bg">
+        <img src="assets/web/pozos.jpg" alt="Bautismo en las aguas — Manantiales" />
+      </div>
+      <div class="wrap about-feature-inner">
+        <div class="about-copy">
+          <span class="eyebrow reveal" data-i18n="prop.kicker">Pozos de Manantiales</span>
+          <h2 class="display-m reveal d1" data-i18n-html="prop.title" style="margin-top:22px;">Somos la sal que sana la tierra para hacer fluir el <em>manantial de Dios.</em></h2>
+          <p class="sub reveal d2" data-i18n="prop.sub">Abrimos pozos para dar aguas que dan vida a los sedientos — una iglesia llena de vida, de alegría y de la vida del Espíritu.</p>
+          <div class="verse-box reveal d3" style="margin-top:30px;">
+            <p class="verse" data-i18n="prop.verse">"Porque Jehová tu Dios te introduce en la buena tierra; tierra de arroyos, de aguas, de fuentes y de manantiales."</p>
+            <span class="verse-ref" data-i18n="prop.verseRef">Deuteronomio 8:7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LA SEMANA (Horarios + Agenda) ============ -->
+  <section class="week section-pad" id="semana">
+    <div class="wrap">
+      <div class="week-top">
+        <div class="section-head" style="margin-bottom:0;">
+          <span class="eyebrow reveal" data-i18n="week.kicker">La semana</span>
+          <h2 class="display-m reveal d1" data-i18n-html="week.title">Nos reunimos cada <em>domingo.</em></h2>
+        </div>
+      </div>
+
+      <!-- Domingo destacado -->
+      <div class="sunday-card reveal">
+        <div class="sunday-info">
+          <span class="svc-name" data-i18n="week.svc">Culto de familia · toda la congregación</span>
+          <div class="big-time">Dom <span>11:00</span></div>
+          <div class="addr">
+            <svg class="pin" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"></path>
+              <circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.6"></circle>
+            </svg>
+            <div>
+              Av. Portales 3022, San Bernardo, Chile<br />
+              <a class="alink" style="margin-top:12px;" href="https://maps.google.com/?q=Av.+Portales+3022,+San+Bernardo,+Chile" target="_blank" rel="noopener">
+                <span data-i18n="week.map">cómo llegar</span><span class="ar ar-r" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="sunday-media">
+          <img class="media-fill" src="assets/web/lugar.jpg" alt="Lugar de reunión — Manantiales Santiago" />
+        </div>
+      </div>
+
+      <!-- Calendario mensual -->
+      <div class="cal reveal d1">
+        <div class="cal-head">
+          <div class="cal-title" id="calMonth">—</div>
+          <div class="cal-nav">
+            <button type="button" id="calPrev" aria-label="Mes anterior">‹</button>
+            <button type="button" id="calToday" data-i18n="cal.today">hoy</button>
+            <button type="button" id="calNext" aria-label="Mes siguiente">›</button>
+          </div>
+        </div>
+        <div class="cal-scroll">
+          <div class="cal-inner">
+            <div class="cal-dow" id="calDow"></div>
+            <div class="cal-grid" id="calGrid"></div>
+          </div>
+        </div>
+        <div class="cal-list" id="calList"></div>
+        <div class="cal-legend" id="calLegend"></div>
+        <div class="agenda-note" data-i18n="cal.note">Calendario referencial — confírmanos las actividades reales del mes para dejarlo al 100%.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IGLESIAS ============ -->
+  <section class="world section-pad" id="iglesias">
+    <div class="wrap">
+      <div class="world-top">
+        <div>
+          <span class="eyebrow reveal" data-i18n="world.kicker">Manantiales en el mundo</span>
+          <h2 class="display-l reveal d1" data-i18n-html="world.title" style="margin-top:20px;">Una visión, <em>muchas casas.</em></h2>
+        </div>
+        <div class="world-stats reveal d2">
+          <div class="ws"><div class="n">13</div><div class="l" data-i18n="stat.churches">congregaciones</div></div>
+          <div class="ws"><div class="n">2</div><div class="l" data-i18n="stat.countries">países</div></div>
+        </div>
+      </div>
+      <p class="lead reveal d2" data-i18n="world.lead" style="margin-bottom:8px;">Desde la sede en San Bernardo, la familia Manantiales ha crecido en iglesias hijas a lo largo de Chile y Argentina.</p>
+
+      <div class="country-block">
+        <div class="country-label reveal">
+          <span class="cn">Chile</span><span class="cc" data-i18n="world.chile">7 congregaciones</span>
+        </div>
+        <div class="campus-grid">
+          <div class="campus is-sede reveal"><span class="idx" data-i18n="world.sede">Sede principal</span><div><div class="city">Santiago</div><div class="note">Av. Portales 3022</div></div></div>
+          <div class="campus reveal"><span class="idx">02</span><span class="city">Rancagua</span></div>
+          <div class="campus reveal d1"><span class="idx">03</span><span class="city">Viña</span></div>
+          <div class="campus reveal d1"><span class="idx">04</span><span class="city">Chillán</span></div>
+          <div class="campus reveal"><span class="idx">05</span><span class="city">Concepción</span></div>
+          <div class="campus reveal d1"><span class="idx">06</span><span class="city">Los Ángeles</span></div>
+          <div class="campus reveal d2"><span class="idx">07</span><span class="city">Traiguén</span></div>
+        </div>
+      </div>
+
+      <div class="country-block">
+        <div class="country-label reveal">
+          <span class="cn">Argentina</span><span class="cc" data-i18n="world.argentina">6 congregaciones</span>
+        </div>
+        <div class="campus-grid">
+          <div class="campus reveal"><span class="idx">08</span><span class="city">Mendoza</span></div>
+          <div class="campus reveal"><span class="idx">09</span><span class="city">San Martín</span></div>
+          <div class="campus reveal d1"><span class="idx">10</span><span class="city">San Juan</span></div>
+          <div class="campus reveal d1"><span class="idx">11</span><span class="city">San Rafael</span></div>
+          <div class="campus reveal d2"><span class="idx">12</span><span class="city">Buenos Aires</span></div>
+          <div class="campus reveal d2"><span class="idx">13</span><span class="city">La Plata</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section class="gallery" id="galeria" aria-label="Galería Manantiales">
+    <div class="gal-head wrap">
+      <span class="eyebrow reveal" data-i18n="gal.kicker">La familia</span>
+      <h2 class="display-l reveal d1" data-i18n-html="gal.title" style="margin-top:18px;">Esto es <em>Manantiales.</em></h2>
+    </div>
+    <div class="gal-row">
+      <div class="gal-track">
+        <img src="assets/web/g1.jpg" alt="" /><img src="assets/web/g2.jpg" alt="" /><img src="assets/web/g3.jpg" alt="" /><img src="assets/web/g4.jpg" alt="" /><img src="assets/web/g5.jpg" alt="" /><img src="assets/web/g1.jpg" alt="" /><img src="assets/web/g2.jpg" alt="" /><img src="assets/web/g3.jpg" alt="" /><img src="assets/web/g4.jpg" alt="" /><img src="assets/web/g5.jpg" alt="" />
+      </div>
+    </div>
+    <div class="gal-row">
+      <div class="gal-track rev">
+        <img src="assets/web/g6.jpg" alt="" /><img src="assets/web/g7.jpg" alt="" /><img src="assets/web/g8.jpg" alt="" /><img src="assets/web/g9.jpg" alt="" /><img src="assets/web/g10.jpg" alt="" /><img src="assets/web/g6.jpg" alt="" /><img src="assets/web/g7.jpg" alt="" /><img src="assets/web/g8.jpg" alt="" /><img src="assets/web/g9.jpg" alt="" /><img src="assets/web/g10.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REDES ============ -->
+  <section class="section-pad" id="redes">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow reveal" data-i18n="red.kicker">Conéctate</span>
+        <h2 class="display-l reveal d1" data-i18n-html="red.title">Síguenos y <em>no te pierdas nada.</em></h2>
+        <p class="lead reveal d2" data-i18n="red.lead">Prédicas, eventos y la palabra de cada semana. Estamos donde tú estás.</p>
+      </div>
+
+      <div class="redes-grid">
+        <a class="red-card reveal" href="https://www.instagram.com/iglesiamanantiales_/" target="_blank" rel="noopener">
+          <svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"></rect>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"></circle>
+            <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"></circle>
+          </svg>
+          <div><div class="plat">Instagram</div><div class="handle">@iglesiamanantiales_</div></div>
+          <span class="alink go"><span data-i18n="red.follow">seguir</span><span class="ar ar-r" aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="red-card reveal d1" href="https://www.facebook.com/manantialessantiago/" target="_blank" rel="noopener">
+          <svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M14 8.5h2V5.5h-2.2C11.7 5.5 10.5 7 10.5 9v1.5H8.5V13.5h2V21h3v-7.5h2.2l.5-3H13.5V9.3c0-.6.3-.8.9-.8Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"></path>
+          </svg>
+          <div><div class="plat">Facebook</div><div class="handle">Manantiales Santiago</div></div>
+          <span class="alink go"><span data-i18n="red.like">ver página</span><span class="ar ar-r" aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="red-card reveal d2" href="https://www.youtube.com/@manantialessantiago" target="_blank" rel="noopener">
+          <svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="6" width="18" height="12" rx="3.5" stroke="currentColor" stroke-width="1.6"></rect>
+            <path d="M11 9.5l4 2.5-4 2.5Z" fill="currentColor" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"></path>
+          </svg>
+          <div><div class="plat">YouTube</div><div class="handle">@manantialessantiago</div></div>
+          <span class="alink go"><span data-i18n="red.watch">ver prédicas</span><span class="ar ar-r" aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+
+      <div class="cta-band reveal">
+        <h2 data-i18n-html="band.title">Tu lugar en la mesa <em>ya está puesto.</em></h2>
+        <a href="#semana" class="btn btn-primary" style="font-size:13px;padding:16px 30px;">
+          <span data-i18n="cta.sunday">ven este domingo</span>
+          <span class="arr" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <svg class="logo-mark" width="40" height="40" viewBox="0 0 48 48" aria-hidden="true">
+          <circle class="ring" cx="24" cy="24" r="21" stroke-width="2.3"></circle>
+          <path class="wave" d="M16.5 14 C 22.5 21, 10.5 27, 16.5 34" stroke-width="3.1"></path>
+          <path class="wave" d="M24 14 C 30 21, 18 27, 24 34" stroke-width="3.1"></path>
+          <path class="wave" d="M31.5 14 C 37.5 21, 25.5 27, 31.5 34" stroke-width="3.1"></path>
+        </svg>
+        <span class="wordmark">Manantiales</span>
+        <span class="slogan">Aguas que dan vida</span>
+      </div>
+
+      <div class="foot-col">
+        <h4 data-i18n="foot.visit">Visítanos</h4>
+        <p>Av. Portales 3022</p>
+        <p>San Bernardo, Chile</p>
+        <p data-i18n="foot.sunday">Domingos · 11:00</p>
+        <a href="https://maps.google.com/?q=Av.+Portales+3022,+San+Bernardo,+Chile" target="_blank" rel="noopener" data-i18n="week.map">cómo llegar ↗</a>
+      </div>
+
+      <div class="foot-col">
+        <h4 data-i18n="foot.follow">Síguenos</h4>
+        <a href="https://www.instagram.com/iglesiamanantiales_/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="https://www.facebook.com/manantialessantiago/" target="_blank" rel="noopener">Facebook ↗</a>
+        <a href="https://www.youtube.com/@manantialessantiago" target="_blank" rel="noopener">YouTube ↗</a>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 Iglesia Cristiana Manantiales</span>
+      <span data-i18n="foot.tag">Aguas que dan vida · San Bernardo · Chile</span>
+    </div>
+  </div>
+</footer>
+
+<script src="image-slot.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
